@@ -31,17 +31,23 @@
 // // console.log(mhs1);
 // // ////////Aktifasi terpisah
 
+//----------------------------------------------------------
+
 // //2. Kata kunci new
 // //const mhs2 = new Object();
 // //mhs2.namaDepan = "Jane";
 // //mhs2.namaBelakang = "Smith";
 // //This number 2 doesn't have 'console.log'
 
+//----------------------------------------------------------
+
 // //Mengakses Properti Object
 // //1. Dot notation
 // //console.log(mhs1.umur);
 // //2. Bracket notation
 // //console.log(mhs1["namaBelakang"]);
+
+//----------------------------------------------------------
 
 // //Untuk nomor 1 di atas
 // console.log(mhs1.alamat.jalan);
@@ -69,6 +75,10 @@ const mahasiswa = [
         namaBelakang: "Adam",
     },
 ];
+
+mahasiswa.push({nim: "004", namaDepan: "Geril"});
+
+//(...items: { nim: string; namaDepan: string; namaBelakang: string; }[]): number
 
 mahasiswa.forEach(function (el) {
     console.log(el);        //Array Object ditampilkan satu persatu berdasarkan index yang mulai dari 0
