@@ -1,0 +1,16 @@
+.header-container {
+  background-color: yellow;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  margin: 10px;
+}
+
+.card-container {
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
