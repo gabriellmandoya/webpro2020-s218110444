@@ -1,4 +1,6 @@
 import React from "react";
+import Counter from "./Counter";
+
 const Card = ({name, institution, address, phoneNumber}) => {
     return (
         <div className = "card-container">
@@ -6,6 +8,7 @@ const Card = ({name, institution, address, phoneNumber}) => {
             <p>{institution}</p>
             <p>{address}</p>
             <p>{phoneNumber}</p>
+            <Counter title = "Counter Component" />
         </div>
     );
 };
