@@ -1,2 +1,2 @@
-Materi pertemuan 21 ada di folder basic-react (paling atas)
-./basic-react/App.js:9
+Materi pertemuan 22 ada di folder basic-react (paling atas)
+./basic-react/App.js:11

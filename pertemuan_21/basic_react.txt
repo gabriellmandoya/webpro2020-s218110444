@@ -1,2 +1,2 @@
 Materi pertemuan 21 ada di folder basic-react (paling atas)
-./basic-react/App.js:6
+./basic-react/App.js:7

@@ -1,0 +1,2 @@
+Materi pertemuan 24 ada di folder basic-react (paling atas)
+./basic-react/App.js:47
