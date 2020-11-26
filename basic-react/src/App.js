@@ -42,7 +42,11 @@
 
 // export default App;
 
+
+
 // ------------------------------------------------------------------
+
+
 
 // PERTEMUAN 24
 
@@ -91,35 +95,87 @@
 // P24 (Cont.)........................................................
 
 
-//Function Component
-import React, { useEffect, useState } from "react";
-import Card2 from "./components/Card2";
+// //Function Component
+// import React, { useEffect, useState } from "react";
+// import Card2 from "./components/Card2";
+// import "./App.css";
+// import axios from "axios";
+
+// const App = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios
+//       .get("https://jsonplaceholder.typicode.com/users")
+//       .then((response) => setUsers(response.data));
+//   }, []);
+
+//   return(
+//     <>
+//       {users.map((item) => {
+//         return (
+//           <Card2
+//             name={item.name}
+//             username={item.username}
+//             email={item.email}
+//             phone={item.phone}
+//           />
+//         );
+//       })}
+//     </>
+//   );
+// };
+
+// export default App;
+
+
+
+// ------------------------------------------------------------------
+
+
+
+//  PERTEMUAN 25
+
+import React from "react";
 import "./App.css";
-import axios from "axios";
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import { Home, Login, Register } from "./pages";
+import Button from "./components/Button";
 
 const App = () => {
-  const [users, setUsers] = useState([]);
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            {/* <li>
+              <Link to="/" component={()=> <Button title="Home"/>}>Home</Link>
+            </li> */}
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/register">Register</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  )
+}
 
-  useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then((response) => setUsers(response.data));
-  }, []);
-
-  return(
-    <>
-      {users.map((item) => {
-        return (
-          <Card2
-            name={item.name}
-            username={item.username}
-            email={item.email}
-            phone={item.phone}
-          />
-        );
-      })}
-    </>
-  );
-};
-
-export default App;
+export default App
